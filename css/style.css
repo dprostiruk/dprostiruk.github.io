@@ -29,6 +29,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin: 20px;
 }
 
 .button:focus {
