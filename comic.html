@@ -46,48 +46,9 @@
     <img class="comic-image" src="/images/Spinner-1s-200px.gif" alt="">
     <h1 class="comic-title"></h1>
     <p class="comic-date"></p>
+    <p class="comic-ago"></p>
 </div>
 
-<script>
-    const email = 'd.prostiruk@innopolis.university';
-    const fetchId = (email) => {
-        return fetch(`https://fwd.innopolis.university/api/hw2?email=${email}`)
-            .then(response => response.text())
-            .then(data => {
-                return data;
-            });
-
-        console.log(data);
-    };
-
-    const fetchInfo = (comicId) =>  {
-        return fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`)
-            .then(response => response.json())
-            .then(comicInfo => {
-                return comicInfo;
-            });
-        console.log(comicInfo);
-    };
-
-    const handleError = (error) => {
-        console.error(error);
-    };
-
-    const displayComic = (comicInfo) => {
-        const comicImage = document.querySelector('.comic-image');
-        const comicTitle = document.querySelector('.comic-title');
-        const comicDate = document.querySelector('.comic-date');
-
-        comicImage.src = comicInfo.img;
-        comicImage.alt = comicInfo.alt;
-        comicTitle.textContent = comicInfo.safe_title;
-        comicDate.textContent = new Date(comicInfo.year, comicInfo.month - 1, comicInfo.day).toLocaleDateString();
-    }
-
-    fetchId(email)
-        .then(comicId => fetchInfo(comicId))
-        .then(comicInfo => displayComic(comicInfo))
-        .catch(error => handleError(error));
-</script>
+<script src="dist/bundle.js"></script>
 </body>
 </html>
