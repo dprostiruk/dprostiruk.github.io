@@ -1,3 +1,7 @@
+<script>
+    import {base} from "$app/paths";
+</script>
+
 <svelte:head>
     <title>Daniil Prostiruk</title>
 </svelte:head>
