@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<html>
 <head>
-
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Comic</title>
+    <script src="/dist/bundle.js"></script>
 
     <style>
         body {
@@ -36,10 +32,8 @@
 
 </head>
 
-<body>
-
 <nav>
-    <button class="button" role="button" onclick="location.href='index.html'">Main Page</button>
+    <button class="button" onclick="location.href='/'">Main Page</button>
 </nav>
 
 <div class="comic-container">
@@ -49,6 +43,4 @@
     <p class="comic-ago"></p>
 </div>
 
-<script src="dist/bundle.js"></script>
-</body>
-</html>
+
