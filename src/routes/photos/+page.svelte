@@ -1,6 +1,5 @@
 <svelte:head>
     <title>Photos</title>
-    <meta name="description" content="Photos of Daniil Prostiruk">
 </svelte:head>
 
 <header>

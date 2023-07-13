@@ -32,6 +32,7 @@ const displayComic = (comicInfo) => {
         comicInfo.month - 1,
         comicInfo.day
     ).toLocaleDateString();
+    //moment(`${comicInfo.year}${comicInfo.month - 1}${comicInfo.day}`, "YYYYMMDD").fromNow();
 };
 
 fetchId(email)
