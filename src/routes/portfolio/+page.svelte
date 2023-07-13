@@ -40,7 +40,7 @@
             <ul class="nav__ul">
                 <li><a href="/about">About Me</a></li>
 
-                <li><a href="photos">View Photos</a></li>
+                <li><a href="/photos">View Photos</a></li>
 
                 <li><a href="/portfolio">View Portfolio</a></li>
             </ul>
