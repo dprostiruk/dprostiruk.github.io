@@ -1,6 +1,14 @@
-<head>
+<script lang="ts">
+    import Comic from '$lib/components/Comic.svelte';
+    import type { PageData } from './$types';
+
+    export let data: PageData;
+    const comic = data.comic;
+</script>
+
+<svelte:head>
     <title>Comic</title>
-    <script src="/dist/bundle.js"></script>
+    <meta name="description" content="Funny comic">
 
     <style>
         body {
@@ -11,31 +19,16 @@
             font-family: Arial, sans-serif;
         }
 
-        .comic-container {
-            display: grid;
-            grid-template-rows: auto auto auto;
-            gap: 10px;
-            text-align: center;
-        }
-
-        .comic-image {
-            max-width: 100%;
-            height: auto;
-        }
-
         nav {
             height: 100%;
         }
     </style>
-</head>
+</svelte:head>
 
 <nav>
     <button class="button" onclick="location.href='/'">Main Page</button>
 </nav>
 
-<div class="comic-container">
-    <img class="comic-image" src="/images/Spinner-1s-200px.gif" alt="" />
-    <h1 class="comic-title" />
-    <p class="comic-date" />
-    <p class="comic-ago" />
+<div>
+    <Comic {comic} />
 </div>

@@ -1,9 +1,6 @@
-<!--<script lang="ts">-->
-<!--    import { base } from '$app/paths';-->
-<!--</script>-->
-
 <svelte:head>
     <title>Daniil Prostiruk</title>
+    <meta name="description" content="Portfolio of Daniil Prostiruk">
 </svelte:head>
 
 <header style="text-align: center; margin: 140px;">
