@@ -27,9 +27,6 @@
             height: 100%;
         }
     </style>
-
-
-
 </head>
 
 <nav>
@@ -37,9 +34,8 @@
 </nav>
 
 <div class="comic-container">
-    <img class="comic-image" src="/images/Spinner-1s-200px.gif" alt="">
-    <h1 class="comic-title"></h1>
-    <p class="comic-date"></p>
-    <p class="comic-ago"></p>
+    <img class="comic-image" src="/images/Spinner-1s-200px.gif" alt="" />
+    <h1 class="comic-title" />
+    <p class="comic-date" />
+    <p class="comic-ago" />
 </div>
-

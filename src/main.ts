@@ -1,17 +1,17 @@
-import { formatDistanceToNow } from 'date-fns'
+import { formatDistanceToNow } from 'date-fns';
 
 interface Comic {
-    "month": number,
-    "num": number,
-    "link": string,
-    "year": number,
-    "news": string,
-    "safe_title": string,
-    "transcript": string,
-    "alt": string,
-    "img": string,
-    "title": string,
-    "day": number
+    month: number;
+    num: number;
+    link: string;
+    year: number;
+    news: string;
+    safe_title: string;
+    transcript: string;
+    alt: string;
+    img: string;
+    title: string;
+    day: number;
 }
 
 const email: string = 'd.prostiruk@innopolis.university';
@@ -43,8 +43,10 @@ const handleError = (error: Error): void => {
 };
 
 const displayComic = (comicInfo: Comic): void => {
-    const comicImage: HTMLImageElement | null = document.querySelector('.comic-image');
-    const comicTitle: HTMLElement | null = document.querySelector('.comic-title');
+    const comicImage: HTMLImageElement | null =
+        document.querySelector('.comic-image');
+    const comicTitle: HTMLElement | null =
+        document.querySelector('.comic-title');
     const comicDate: HTMLElement | null = document.querySelector('.comic-date');
     const comicAgo: HTMLElement | null = document.querySelector('.comic-ago');
 
@@ -52,14 +54,22 @@ const displayComic = (comicInfo: Comic): void => {
         comicImage.src = comicInfo.img;
         comicImage.alt = comicInfo.alt;
         comicTitle.textContent = comicInfo.safe_title;
-        comicDate.textContent = new Date(comicInfo.year, comicInfo.month - 1, comicInfo.day).toLocaleDateString();
-        const date = new Date(comicInfo.year, comicInfo.month - 1, comicInfo.day);
+        comicDate.textContent = new Date(
+            comicInfo.year,
+            comicInfo.month - 1,
+            comicInfo.day
+        ).toLocaleDateString();
+        const date = new Date(
+            comicInfo.year,
+            comicInfo.month - 1,
+            comicInfo.day
+        );
 
         if (comicAgo) {
             comicAgo.textContent = formatDistanceToNow(date) + ' ago';
         }
     }
-}
+};
 
 fetchId(email)
     .then((comicId: string) => fetchInfo(comicId))

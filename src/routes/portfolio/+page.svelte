@@ -9,30 +9,30 @@
     </nav>
 </header>
 
-
-
 <main>
     <h1>
-        I have experience in front- and backend development. Django, DB, Telegram and Discord bots creation.
+        I have experience in front- and backend development. Django, DB,
+        Telegram and Discord bots creation.
     </h1>
 </main>
 
 <footer class="footer">
     <div class="footer__addr">
-
         <h2>Contact</h2>
 
         <address>
-            Innopolis, Tatarstan Republic, Russia<br>
+            Innopolis, Tatarstan Republic, Russia<br />
 
-            <a class="footer__btn" href="mailto:daniil.prostiruk@gmail.com">Email Me</a>
+            <a class="footer__btn" href="mailto:daniil.prostiruk@gmail.com"
+                >Email Me</a
+            >
         </address>
     </div>
 
     <ul class="footer__nav">
-        <li class="nav__item"></li>
+        <li class="nav__item" />
 
-        <li class="nav__item"></li>
+        <li class="nav__item" />
 
         <li class="nav__item">
             <h2 class="nav__title">Information</h2>

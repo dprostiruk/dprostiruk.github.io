@@ -10,27 +10,35 @@
 </header>
 
 <main>
-
-    <img src="/images/photo_2023-06-10_10-01-40.jpg" style="width: 500px; height: auto; display: block; margin: 10px; display: inline-flex" alt="something">
-    <img src="/images/IMG_6500.JPG" style="width: 500px; height: auto; display: block; margin: 10px; display: inline-flex" alt="something">
+    <img
+        src="/images/photo_2023-06-10_10-01-40.jpg"
+        style="width: 500px; height: auto; display: block; margin: 10px; display: inline-flex"
+        alt="something"
+    />
+    <img
+        src="/images/IMG_6500.JPG"
+        style="width: 500px; height: auto; display: block; margin: 10px; display: inline-flex"
+        alt="something"
+    />
 </main>
 
 <footer class="footer">
     <div class="footer__addr">
-
         <h2>Contact</h2>
 
         <address>
-            Innopolis, Tatarstan Republic, Russia<br>
+            Innopolis, Tatarstan Republic, Russia<br />
 
-            <a class="footer__btn" href="mailto:daniil.prostiruk@gmail.com">Email Me</a>
+            <a class="footer__btn" href="mailto:daniil.prostiruk@gmail.com"
+                >Email Me</a
+            >
         </address>
     </div>
 
     <ul class="footer__nav">
-        <li class="nav__item"></li>
+        <li class="nav__item" />
 
-        <li class="nav__item"></li>
+        <li class="nav__item" />
 
         <li class="nav__item">
             <h2 class="nav__title">Information</h2>
