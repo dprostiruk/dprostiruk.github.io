@@ -1,9 +1,13 @@
+<svelte:head>
+    <title>Contact me</title>
+    <meta name="description" content="Contact Daniil Prostiruk">
+</svelte:head>
+
 <head>
     <script
-        src="https://kit.fontawesome.com/7a53e15f8c.js"
-        crossorigin="anonymous"
+      src="https://kit.fontawesome.com/7a53e15f8c.js"
+      crossorigin="anonymous"
     ></script>
-    <title>Contact me</title>
 </head>
 
 <header>
